@@ -31,7 +31,6 @@ class AddUser extends Component {
             placeholder="user name"
           />
           <button disabled={this.props.firstName === "" || this.props.lastName === "" || this.props.userName === "" || this.props.userNameExists}>Add</button>
-          <p className={this.props.userNameExists ? "error" : "hide"}>Username already exists!</p>
         </form>
       </div>
     );
